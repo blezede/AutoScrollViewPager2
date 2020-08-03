@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:context=".MainActivity">
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <cn.blezede.meterial.autoscrollviewpager.AutoScrollViewPager2
+                android:id="@+id/auto_view_pager1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+            <cn.blezede.meterial.autoscrollviewpager.AutoScrollViewPager2
+                android:id="@+id/auto_view_pager2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp" />
+
+
+            <cn.blezede.meterial.autoscrollviewpager.AutoScrollViewPager2
+                android:id="@+id/auto_view_pager3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp" />
+
+            <cn.blezede.meterial.autoscrollviewpager.AutoScrollViewPager2
+                android:id="@+id/auto_view_pager4"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

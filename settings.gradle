@@ -1,0 +1,2 @@
+include ':app', ':autoscrollviewpager2'
+rootProject.name='AutoScrollViewPager2'
